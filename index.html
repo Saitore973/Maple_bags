@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Maple bags</title>
+    <style>
+        .container {
+            background: linear-gradient(to bottom right, #66ffff 0%, #ff99cc 100%);
+
+        }
+
+        h1 {
+            color: rgb(231, 84, 84);
+            text-align: center;
+            padding: 15px;
+        }
+
+        em {
+            font-size: 22px;
+            margin-left: 190px;
+        }
+
+        .image-fluid {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 0 auto;
+
+        }
+
+        .img-1 {
+            margin-left: 10%;
+            margin-bottom: 0%;
+            border: 1px solid cyan;
+            border-radius: 7px;
+        }
+
+        .img-2 {
+            margin-left: -33%;
+            margin-top: 5%;
+            border: 1px solid cyan;
+            border-radius: 7px;
+        }
+
+        p {
+            text-align: center;
+            padding: 5px;
+            line-height: 35px;
+            font-size: 20px;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: cyan;
+            color: rgb(231, 84, 84);
+            padding: 10px 25px;
+            border-radius: 25px;
+            border: none;
+            transition: all 200ms ease-in-out;
+            box-shadow: 3px 3px 6px rgb(231, 84, 84);
+        }
+
+        button:hover {
+            color: black;
+            background-color: rgb(231, 84, 84);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            padding: 8px;
+            font-weight: bolder;
+        }
+
+        hr {
+            width: 10%;
+            height: 3px;
+            background-color: rgb(231, 84, 84);
+        }
+
+        .copy {
+            font-size: 15px;
+            text-shadow: 3px 3px 8px rgb(51, 250, 250);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            MAPLE BAGS <br> <em>by Karen</em>
+        </h1>
+        <div class="image-fluid">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/622/original/image1.jpg?1640626597"
+                alt="" class="img-1">
+            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/623/original/image2.jpg?1640626679" alt="" class="img-2">
+
+        </div>
+        <h2>
+            Brief Preview <br>
+            <hr>
+            </h3>
+            <p>
+                Inspired by the Kenyan energy, <strong> Maple <br> bags by Karen</strong> ships bags from abroad to suit
+                our customers <br>
+                specifications as well as a focus on their satisfaction. <br> The store is purely online and our
+                services are
+                based on pay cash <br> after delivery. Delivery services are available <br> country wide at an
+                affordable price
+                , however,<br> within the Nairobi Central district delivery is free. <br>
+                Feel free to follow us on instagram <a href="https://www.instagram.com/maplebagsbykaren/"
+                    target="_blank">@ Maple bags by
+                    Karen</a>
+            </p>
+
+            <button>
+                Place Order
+            </button>
+            <p class="copy">
+                &copy Copyright 2021 Saitore Virginia.
+            </p>
+    </div>
+    <script>
+        function orderButton() {
+            let name = prompt('What is your name?');
+            let email = prompt('What is your Email Address?')
+            if (email.length > 0 && name.length > 0) {
+                alert('Thank you ' + name + ' 😊 ,our customer care shall contact you via Email!')
+            }
+            else {
+                alert('Please enter a valid name or email')
+            }
+
+        }
+
+        let placeOrder = document.querySelector('button');
+        placeOrder.addEventListener('click', orderButton);
+    </script>
+</body>
+
+</html>
